@@ -1,10 +1,22 @@
-d1 $ s "casio*3"
-# n "0 1 2"
-# gain "1 0.7 0.5"
-# resonance 0.2
+setcps 0.5
 
-d2 $ s "bd*4"
-# n "~ 2 1"
+d1 $ sound "moog*16"
+# n "<0 1 e 3>"
+# cutoff (range 200 2400 $ saw)
 # resonance 0.2
+# legato 3
+# room 0.3
+
+d2 $ sound "moog*4"
+# n "<0 1 e 3>"
+# cutoff (range 200 2400 $ saw)
+# resonance 0.2
+# legato 3
+# room 0.3
+
+d3 $ sound "bd(3,8) superfm(5,8)"
+# n "<8 3 7 2>"
+# legato 30
+# room 0.3
 
 hush
