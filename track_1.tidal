@@ -1,0 +1,10 @@
+d1 $ s "casio*3"
+# n "0 1 2"
+# gain "1 0.7 0.5"
+# resonance 0.2
+
+d2 $ s "bd*4"
+# n "~ 2 1"
+# resonance 0.2
+
+hush
