@@ -1,21 +1,64 @@
-setcps (130/60/4)
+setcps (60/60/4)
 
-d1 $ n (fmap (*1.5) $ run 4)
+d1 $ n (fmap (*2.5) $ run 16)
 # s "drum"
+# octave 9
 # legato 0.3
+# gain 0.95
 # decay 0.88
-# room 0.3
+# room 0.25
+# size 0.99
 
-d2 $ n "0 0 0 2 0 0 0 [0 2]"
+d1 silence
+
+d2 $ n "3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3"
 # s "drum"
 # legato 0.3
-# decay 0.4
-# room 0.3
+# gain 1.1
+# decay 0.88
+# room 0.25
+# size 0.99
 
-d3 $ n (fmap (*1.5) $ run 12)
-# s "superreese"
-# octave 1
-# legato 1
-# room 0.3
+d2 silence
+
+d3 $ cat [
+    n "0 ~ ~ ~ 0 ~ ~ ~ ~ ~ ~ ~ 0 ~ ~ ~",
+    n "0 ~ ~ ~ 0 ~ ~ ~ ~ ~ ~ ~ 0 0 ~ ~"
+]
+# s "super808"
+# gain 1.3
+# decay 0.88
+# room 0.25
+# size 0.25
+
+d3 silence
+
+d4 $ cat [
+    n "-5 -1 0 [4 -1] 2 4 11 ~ -1 0 [0 9] 4 -1 ~ ~ ~",
+    n "11 7 4 0 ~ -1 0 ~"
+]
+# s "soskick"
+# octave 6
+# gain 0.8
+# decay 0.88
+# legato 24
+# room 0.66
+# size 0.88
+
+d4 silence
+
+d5 $ cat [
+    n "~",
+    n "-5 -1 0 [4 -1] 2 4 11 ~ -1 0 [0 9] 4 -1 ~ ~ ~"
+]
+# s "superkick"
+# octave 6
+# gain 0.88
+# decay 0.88
+# legato 48
+# room 0.5
+# size 0.99
+
+d5 silence
 
 hush
