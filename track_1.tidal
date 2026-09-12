@@ -7,7 +7,7 @@ d1 $ n (fmap (*2.5) $ run 16)
 # gain 0.95
 # decay 0.88
 # room 0.25
-# size 0.99
+# size 0.88
 
 d1 silence
 
@@ -35,15 +35,17 @@ d3 silence
 
 d4 $ cat [
     n "-5 -1 0 [4 -1] 2 4 11 ~ -1 0 [0 9] 4 -1 ~ ~ ~",
-    n "11 7 4 0 ~ -1 0 ~"
+    n "11 7 4 0 _ -1 -5 _"
 ]
-# s "soskick"
-# octave 6
-# gain 0.8
+# s "supervibe"
+# octave "<6 _ _ _ 5 _ _ _>"
+# gain 1.75
 # decay 0.88
-# legato 24
-# room 0.66
-# size 0.88
+# legato 48
+# room 0.5
+# size 0.99
+# lfo 0.01
+# djf "<0.4 _ _ _ 0.7 _ _ _>"
 
 d4 silence
 
@@ -61,4 +63,19 @@ d5 $ cat [
 
 d5 silence
 
+d6 $ cat [
+    n "0",
+    n "-3 4 _ [2 2 _ _]"
+]
+# s "supersquare"
+# octave 3
+# gain 1.5
+# room 0.25
+# size 0.75
+# lfo 0.1
+
+d6 silence
+
 hush
+
+panic
