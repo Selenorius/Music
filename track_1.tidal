@@ -37,15 +37,16 @@ d4 $ cat [
     n "-5 -1 0 [4 -1] 2 4 11 ~ -1 0 [0 9] 4 -1 ~ ~ ~",
     n "11 7 4 0 _ -1 -5 _"
 ]
-# s "supervibe"
+# s "superpiano"
 # octave "<6 _ _ _ 5 _ _ _>"
-# gain 1.75
-# decay 0.88
-# legato 48
-# room 0.5
-# size 0.99
-# lfo 0.01
-# djf "<0.4 _ _ _ 0.7 _ _ _>"
+# legato "15"
+# gain "0.44"
+# room "0.88"
+# size "0.88"
+# velocity "5"
+# lfo "0.1"
+# voice "<0.4 _ _ _ 0.8 _ _ _>"
+# djf "0.35"
 
 d4 silence
 
