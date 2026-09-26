@@ -34,23 +34,57 @@ d3 $ cat [
 d3 silence
 
 d4 $ cat [
-    n "-5 -1 0 [4 -1] 2 4 11 ~ -1 0 [0 9] 4 -1 ~ ~ ~",
-    n "11 7 4 0 _ -1 -5 _"
+    n "-5 -1 0 4",
+    n "7 11 7 4"
 ]
-# s "superpiano"
-# octave "<6 _ _ _ 5 _ _ _>"
-# legato "15"
-# gain "0.44"
-# room "0.88"
-# size "0.88"
-# velocity "5"
+# s "superchip"
+# octave "<5 _ _ _ 4 _ _ _>"
+# legato "4"
+# gain "1.1"
+# room "0.5"
+# size "0.75"
+# velocity "1"
 # lfo "0.1"
-# voice "<0.4 _ _ _ 0.8 _ _ _>"
+# voice "0.8"
 # djf "0.35"
 
 d4 silence
 
 d5 $ cat [
+    n "-1 2 4 7",
+    n "11 14 11 9"
+]
+# s "superchip"
+# octave "<4>"
+# legato "4"
+# gain "1"
+# room "0.5"
+# size "0.75"
+# velocity "1"
+# lfo "0.1"
+# voice "0.8"
+# djf "0.35"
+
+d5 silence
+
+d6 $ cat [
+    n "-1 2 4 7 -1 2 7 9 -1 2 4 7 -1 2 7 9",
+    n "11 14 11 9 11 14 9 7 11 14 11 9 11 14 9 7"
+]
+# s "superhammond"
+# octave "<5>"
+# gain "1"
+# room "0.5"
+# size "0.75"
+# velocity "1"
+# lfo "0.1"
+# voice "<0.4 _ _ _ 0.8>"
+
+d6 silence
+
+d7 $ cat [
+    n "~",
+    n "~",
     n "~",
     n "-5 -1 0 [4 -1] 2 4 11 ~ -1 0 [0 9] 4 -1 ~ ~ ~"
 ]
@@ -62,9 +96,9 @@ d5 $ cat [
 # room 0.5
 # size 0.99
 
-d5 silence
+d7 silence
 
-d6 $ cat [
+d8 $ cat [
     n "0",
     n "-3 4 _ [2 2 _ _]"
 ]
@@ -75,7 +109,7 @@ d6 $ cat [
 # size 0.75
 # lfo 0.1
 
-d6 silence
+d8 silence
 
 hush
 
