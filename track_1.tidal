@@ -184,7 +184,7 @@ d6 $ cat [
 # velocity "1"
 # lfo "0"
 # voice "1.1"
-# djf "0.175"
+# djf "0.15"
 
 d6 silence
 
