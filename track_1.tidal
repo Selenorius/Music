@@ -178,13 +178,13 @@ d6 $ cat [
     n "4",
     n "4 11 _ [9 9 _ _]"
 ]
-# s "superzow"
+# s "superreese"
 # octave "2"
 # gain "1.45"
 # velocity "1"
 # lfo "0"
 # voice "1.1"
-# djf "0.15"
+# djf "0.2"
 
 d6 silence
 
