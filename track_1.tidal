@@ -157,7 +157,7 @@ d5 $ cat [
 ]
 # s "supercomparator"
 # octave "5"
-# legato "1.25"
+# legato "1.1"
 # gain "0.95"
 # room "0.65"
 # size "0.95"
